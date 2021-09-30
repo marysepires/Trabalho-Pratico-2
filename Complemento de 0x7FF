@@ -1,0 +1,11 @@
+//Complemento de 0x7FF (considerando palavra de 16 bits)
+fn main() {
+    
+    let a:u16 = 0x7FF;
+    let complemento = !a;
+    
+    println!("bits = {:b} Complemento em bits: {:b}",a,complemento);
+    println!("~0x{:X} = 0x{:X}",a,complemento);
+    
+
+}
