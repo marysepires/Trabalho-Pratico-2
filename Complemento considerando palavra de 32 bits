@@ -1,0 +1,34 @@
+//Considerando palavra de 32 bits
+fn main() {
+   //~0xC5 = 0xFFFFFF3A 
+    let a:u32 = 0xC5;
+    let c_a = !a;
+    
+    println!("~0x{:X} = 0x{:X}",a,c_a);
+    println!("{:b} = 0x{:X}",a,a);
+    println!("{:b} = 0x{:X}\n--------------------------------",c_a,c_a);
+    
+    //~0x1111 = 0xFFFFEEEE
+    let b:u32 = 0x1111;
+    let c_b = !b;
+    
+    println!("~0x{:X} = 0x{:X}",b,c_b);
+    println!("{:b} = 0x{:X}",b,b);
+    println!("{:b} = 0x{:X}\n--------------------------------",c_b,c_b);
+    
+    //~0xFFFF = 0xFFFF0000
+    let c:u32 = 0xFFFF;
+    let c_c = !c;
+    
+    println!("~0x{:X} = 0x{:X}",c,c_c);
+    println!("{:b} = 0x{:X}",c,c);
+    println!("{:b} = 0x{:X}\n--------------------------------",c_c,c_c);
+    
+    //~0x5B3C = 0xFFFFA4C3
+    let d:u32 = 0x5B3C;
+    let c_d = !d;
+    
+    println!("~0x{:X} = 0x{:X}",d,c_d);
+    println!("{:b} = 0x{:X}",d,d);
+    println!("{:b} = 0x{:X}\n--------------------------------",c_d,c_d);
+}
