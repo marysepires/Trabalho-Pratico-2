@@ -1,0 +1,18 @@
+// MÁSCARA EXTRAÇÃO DE BITS A DIREITA OU A ESQUERDA
+fn main() {
+
+    //extrair os 6 bits mais a direita de a e assinalar à variável b
+    let a:u16 = 0x6DB7;
+    let mascara:u16 = 0x3F;
+    let b:u16 = a & mascara;
+    println!("a = {:b} = 0x{:X}",a,a);
+    println!("M = {:b} = 0x{:X}",mascara,mascara);
+    println!("b = {:b} = 0x{:X}\n\n",b,b);
+    
+    //extrair os 6 bits mais a esquerda de a e assinalar à variável b
+    let mascara1:u16 = 0xFC00;
+    let b = a & mascara1;
+    println!("a = {:b} = 0x{:X}",a,a);
+    println!("M = {:b} = 0x{:X}",mascara1,mascara1);
+    println!("b = {:b} = 0x{:X}\n\n",b,b);
+}
