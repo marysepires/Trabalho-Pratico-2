@@ -1,4 +1,4 @@
-// MÁSCARA EXTRAÇÃO DE BITS A DIREITA OU A ESQUERDA
+// MÁSCARA EXTRAÇÃO DE BITS A DIREITA OU A ESQUERDA (&)
 fn main() {
 
     //extrair os 6 bits mais a direita de a e assinalar à variável b
