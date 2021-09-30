@@ -1,0 +1,35 @@
+//Operadores bitwise lógicos--
+
+fn main() {
+   /*
+   Suponha que a e b sejam variáveis
+inteiras sem sinal de valores 0x6DB7 e
+0xA726
+ */ 
+
+    let a:u16 = 0x6DB7;
+    let b:u16 = 0xA726;
+
+    //• Qual o valor de ~a ?
+    let complemento_a = !a;
+    println!("a = {:b} = 0x{:X}",a,a);
+    println!("~a = {:b} = 0x{:X}\n",complemento_a,complemento_a);
+    
+    //• Qual o valor de ~b ?
+    let complemento_b = !b;
+    println!("b = {:b} = 0x{:X}",b,b);
+    println!("~b = {:b} = 0x{:X}\n",complemento_b,complemento_b);
+    
+    //• Qual o valor de a & b ?
+    let c = a & b;
+    println!("a & b = {:b} = 0x{:X}\n",c,c);
+    
+    //• Qual o valor de a ^ b ?
+    let d = a ^ b;
+    println!("a ^ b = {:b} = 0x{:X}\n",d,d);
+    
+    //• Qual o valor de a | b ?
+    let e = a | b;
+    println!("a | b = {:b} = 0x{:X}\n",e,e);
+    
+}
