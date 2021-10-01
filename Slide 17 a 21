@@ -1,0 +1,27 @@
+/* MÁSCARA PARA COPIAR UMA PARTE PARA UMA NOVA PALAVRA (|)
+Suponha que a variável a seja uma inteira sem sinal de valor
+0x6DB7, como antes. Transforme a sua correspondente representação
+binária em uma outra representação binária na qual os 8 bits mais
+à direita são todos 1s e os 8 bits mais à esquerda permanecem com
+seus valores originais. 
+Assinale essa representação binária à variável inteira sem sinal b.*/ 
+
+fn main() {
+
+    /*Transformar os 8 bits mais à direita em 1 e os 8 bits mais
+    à esquerda permanecem com seus valores originais. */
+    let a:u16 = 0x6DB7;
+    let mut mascara:u16 = 0xFF;
+    let mut b:u16 = a | mascara;
+    println!("a = {:016b} = 0x{:X}",a,a);
+    println!("M = {:016b} = 0x{:X}",mascara,mascara);
+    println!("b = {:016b} = 0x{:X}\n\n",b,b);
+    
+    /*Transformar os 8 bits mais à esquerda em 1 e os 8 bits mais
+    à direita permanecem com seus valores originais. */
+    mascara = 0xFF00;
+    b = a | mascara;
+    println!("a = {:016b} = 0x{:X}",a,a);
+    println!("M = {:016b} = 0x{:X}",mascara,mascara);
+    println!("b = {:016b} = 0x{:X}\n\n",b,b);
+}
