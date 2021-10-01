@@ -1,0 +1,23 @@
+/* MÁSCARA PARA INVERTER BITS (^)
+Suponha que a seja uma variável inteira sem sinal cujo valor
+é 0x6DB7, como nos exemplos anteriores. 
+*/
+fn main() {
+
+    /*Inverter os 8 bits mais à direita e preservar os 8 bits
+    mais à esquerda. Assinalando à variável inteira sem sinal b*/
+    let a:u16 = 0x6DB7;
+    let mut mascara:u16 = 0xFF;
+    let mut b:u16 = a ^ mascara;
+    println!("a = {:b} = 0x{:X}",a,a);
+    println!("M = {:b} = 0x{:X}",mascara,mascara);
+    println!("b = {:b} = 0x{:X}\n\n",b,b);
+    
+    /*Inverter os 8 bits mais à esquerda e preservar os 8 bits
+    mais à direita. Assinalando à variável inteira sem sinal b*/
+    mascara = 0xFF00;
+    b = a ^ mascara;
+    println!("a = {:b} = 0x{:X}",a,a);
+    println!("M = {:b} = 0x{:X}",mascara,mascara);
+    println!("b = {:b} = 0x{:X}\n\n",b,b);
+}
