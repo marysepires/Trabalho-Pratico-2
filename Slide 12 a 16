@@ -1,0 +1,23 @@
+/* MÁSCARA EXTRAÇÃO DE BITS A DIREITA OU A ESQUERDA (&)
+
+    Suponha que a=0x6DB7 e que queiramos extrair os 6
+    bits mais a direita de a e assinalar à variável b. Como
+    fazer isso?
+    -->extrair os 6 bits mais a direita de a e assinalar à variável b<--*/
+    
+fn main() {
+
+    let a:u16 = 0x6DB7;
+    let mut mascara:u16 = 0x3F;
+    let mut b:u16 = a & mascara;
+    println!("a = {:016b} = 0x{:X}",a,a);
+    println!("M = {:016b} = 0x{:X}",mascara,mascara);
+    println!("b = {:016b} = 0x{:X}\n\n",b,b);
+    
+    //extrair os 6 bits mais a esquerda de a e assinalar à variável b
+    mascara = 0xFC00;
+    b = a & mascara;
+    println!("a = {:016b} = 0x{:X}",a,a);
+    println!("M = {:016b} = 0x{:X}",mascara,mascara);
+    println!("b = {:016b} = 0x{:X}\n\n",b,b);
+}
