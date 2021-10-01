@@ -1,0 +1,24 @@
+/* MÁSCARA LIGA DESLIGA BIT
+Suponha que a seja uma variável inteira sem sinal
+cujo valor é 0x6DB7, como nos exemplos
+anteriores. 
+• Qual o resultado da expressão a ^ 0x4?*/
+
+fn main() {
+    
+    //Qual o resultado da expressão a ^ 0x4 repetidamente, liga e desligao terceiro bit a partir da direita)?
+    let mut a:u16 = 0x6DB7;
+    let mascara:u16 = 0x4;
+    let mut x = 1;
+    loop {
+        if x == 10 {
+            break;
+        }
+        println!("a = {:016b} = 0x{:X}",a,a);
+        a = a ^ mascara;
+        println!("M = {:016b} = 0x{:X}",mascara,mascara);
+        println!("a = {:016b} = 0x{:X}\n\n",a,a);
+        x+=1;
+   }
+    
+}
