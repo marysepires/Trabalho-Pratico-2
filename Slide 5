@@ -1,0 +1,29 @@
+/*Outros exemplos
+– ~0xC5 = 0xFFFFFF3A
+– ~0x1111 = 0xFFFFEEEE
+– ~0xFFFF = 0xFFFF0000
+– ~0x5B3C = 0xFFFFA4C3*/
+
+fn main() {
+    let e1:u32 = 0xC5;      //Criando as variáveis com os valores mostrado no exemplo
+    let e2:u32 = 0x1111;    
+    let e3:u32 = 0xFFFF;
+    let e4:u32 = 0x5B3C;
+
+    println!("~0x{:X} = 0x{:X}", e1, !e1); //Complemento de 0xc5
+    println!("{:032b} = 0x{:X}", e1, e1);   //0xC5 representado em bits
+    println!("{:032b} =  0x{:X}", !e1,!e1); //Complemento de 0xc5 em bits
+
+    println!("\n~0x{:X} = 0x{:X}", e2, !e2); //Complemento de 0x1111
+    println!("{:032b}  = 0x{:X} ", e2, e2);  //0x1111 representado em bits
+    println!("{:032b}  = 0x{:X} ", !e2,!e2); //Complemento de 0x1111 em bits
+    
+    println!("\n~0x{:X} = 0x{:X}", e3, !e3); //Complemento de 0xFFFF
+    println!("{:032b}  = 0x{:X}", e3, e3);   //0xFFFF representado em bits
+    println!("{:032b} = 0x{:X}", !e3,!e3);   //Complemento de 0xFFFF em bits
+    
+    println!("\n~0x{:X} = 0x{:X}", e4, !e4); //Complemento de 0x5B3C
+    println!("{:032b} =  0x{:X}", e4, e4);   //0x5B3C representado em bits
+    println!("{:032b} = 0x{:X}", !e4,!e4);  //Complemento de 0x5B3C em bits
+
+}
