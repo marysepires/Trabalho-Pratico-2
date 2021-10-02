@@ -1,0 +1,12 @@
+/*Suponha que a e b sejam variáveis
+inteiras sem sinal de valores 0x6DB7 e
+0xA726
+• Qual o valor de ~a ?*/
+
+fn main() {
+
+     let a:u16 = 0x6DB7; //criando a variável a de 16 bits
+    
+    println!("a = {:016b} = 0x{:X}", a, a); //O valor de a em bits
+    println!("~a = {:b} = 0x{:X}", !a, !a) //O Complemento de  a
+}
