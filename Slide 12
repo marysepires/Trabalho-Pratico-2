@@ -1,0 +1,12 @@
+// Slide 12 - Operadores Bitwise Lógicos
+// Suponha que a e b sejam variáveis inteiras sem sinal de valores 0x6DB7 e 0xA726
+fn main() {
+    let a:u16 = 0x6DB7;
+    let b:u16 = 0xA726;
+
+    // Valor de a | b
+    println!("a | b:");
+    println! ("a = {:016b} = 0x{:X}", a, a);
+    println!("b = {:b} = 0x{:X}", b, b);
+    println!("a|b = {:b} = 0x{:X}", a|b, a|b);  
+}
