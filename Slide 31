@@ -1,0 +1,19 @@
+// Slide 30 e 31
+// Trocar os bits 5,4 e 3 para o valor “101” mantendo os outros bits intactos. 
+// – B = (( B & M1) | M2) – Onde M1=11100011 e M2=00010100
+fn main() {
+    let mut b:u8 = 0xAF;
+    let m1:u8 = 0xE3;
+    let m2:u8 =0x14;
+
+    println!("B = 0x{:X} = {:b}", b, b);
+    println!("M1 = 0x{:X} = {:b}\n", m1, m1);
+
+    b = b & m1; // B & M1
+    println!("B & M1 = 0x{:X} = {:b}", b, b);
+    println!("\nM2 = 0x{:X} = {:08b}", m2, m2);
+
+    b = b | m2; // ((B & M1) | M2)
+    println!("\n((B & M1) | M2) = 0x{:x}",b);
+    println!("0x{:X} = {:b}", b, b);
+}
