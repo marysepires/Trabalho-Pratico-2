@@ -1,0 +1,26 @@
+// Operadores Bitwise de Atribuição
+fn main() {
+
+let a:u16 = 0x6DB7;
+let mut com_a:u16;
+
+com_a = a & 0x7F; 
+println!("a &= 0x7F"); //Expressão
+println!("a = a & 0x7f == 0x{:x}", com_a);
+
+com_a = a ^ 0x7f; 
+println!("\na ^= 0x7F"); //Expressão
+println!("a = a ^ 0x7f = 0x{:x}", com_a);
+
+com_a = a | 0x7F;
+println!("\na |= 0x7F"); //Expressão
+println!("a = a | 0x7f == 0x{:x}", com_a);
+
+com_a = a << 5;
+println!("\na <<= 5"); //Expressão
+println!("a = a << 5 = 0x{:x}", com_a);
+
+com_a = a >> 5;
+println!("\na >>= 5"); //Expressão
+println!("a = a >> 5 = 0x{:x}", com_a);
+}
