@@ -3,7 +3,7 @@ Qual será o complemento de 0x7FF?  */
 
 fn main() {
 
-     let a=:u16 = 0x7FF;			//Criando a variável de 16 bits e armazenando 0x7FF nela
+     let a:u16 = 0x7FF;			//Criando a variável de 16 bits e armazenando 0x7FF nela
      
      println!("A representação em bits é: {:016b}", a);  //Representação de 0x7FF em bits
      println!("O complemento é: {:b} ", !a);            // Complemento de 0x7FF em bits
