@@ -1,8 +1,8 @@
 // Operadores Bitwise de Atribuição
 fn main () {
 
-    deixe um: u16 = 0x6DB7;
-    deixe mut com_a: u16;
+    let a: u16 = 0x6DB7;
+    let mut com_a: u16;
     
     com_a = a & 0x7F; 
     println! ("a & = 0x7F"); // Expressão
