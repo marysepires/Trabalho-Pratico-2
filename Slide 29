@@ -1,21 +1,21 @@
-//Máscara - trocar dois bits menos significativos para o valor "10"
-fn main() {
+// Máscara - trocar dois bits menos ensacados para o valor "10"
+fn main () {
 
-let mut b:u8 = 0x55;
-let m1:u8 = 0xfc;
-let m2:u8 =0x02;
-
-println!("b = 0x{:x}",b);
-println!("m1 = 0x{:x}",m1);
-
-b = b & m1; //Expressão
-println!("b = b & m1\n");
-
-println!("b = 0x{:x}",b);
-println!("m2 = 0x{:x}",m2);
-
-b = b | m2; //Expressão
-println!("b = b & m1\n");
-
-println!("b = 0x{:x}",b);
+    deixe mut b: u8 = 0x55;
+    deixe m1: u8 = 0xfc;
+    deixe m2: u8 = 0x02;
+    
+    println! ("b = 0x {: x}", b);
+    println! ("m1 = 0x {: x}", m1);
+    
+    b = b & m1; // Expressão
+    println! ("b = b & m1 \ n");
+    
+    println! ("b = 0x {: x}", b);
+    println! ("m2 = 0x {: x}", m2);
+    
+    b = b | m2; // Expressão
+    println! ("b = b & m1 \ n");
+    
+    println! ("b = 0x {: x}", b);
 }
