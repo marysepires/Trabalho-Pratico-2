@@ -1,0 +1,13 @@
+//Slide 36 - Operadores de Deslocamento
+// Deslocar todos os bits de a seis posições à  esquerda e o resultado será atribuído à variável b
+fn main() {
+
+  let a:u16 = 0x6db7;
+  let b:u16;
+
+  println!("a = 0x{:x} = {:016b}", a, a);
+
+  b = a << 6;
+
+  println!("b = a << 6 = 0x{:x} = {:016b}", b, b);
+}
