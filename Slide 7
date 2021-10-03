@@ -1,0 +1,21 @@
+// Slide 7 - Tabela Operadores Bitwise Lógicos
+fn main() {
+
+    let mut b1 = 1;
+    let mut b2 = 1;
+
+    println!("b1 = {}    |b2 = {}    |b1 & b2 = {}   |b1 ^ b2 = {}  |b1 | b2 = {}", b1, b2, b1&b2, b1^b2, b1|b2);
+
+    b2 = 0;
+
+    println!("b1 = {}    |b2 = {}    |b1 & b2 = {}   |b1 ^ b2 = {}  |b1 | b2 = {}",b1, b2, b1&b2, b1^b2, b1|b2);
+
+    b1 = 0;
+    b2 = 1;
+
+    println!("b1 = {}    |b2 = {}    |b1 & b2 = {}   |b1 ^ b2 = {}  |b1 | b2 = {}", b1, b2, b1&b2, b1^b2, b1|b2);
+
+    b2=0;
+
+    println!("b1 = {}    |b2 = {}    |b1 & b2 = {}   |b1 ^ b2 = {}  |b1 | b2 = {}",b1, b2, b1&b2, b1^b2, b1|b2);
+}
