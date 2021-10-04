@@ -1,9 +1,9 @@
 // Máscara - trocar dois bits menos ensacados para o valor "10"
 fn main () {
 
-    deixe mut b: u8 = 0x55;
-    deixe m1: u8 = 0xfc;
-    deixe m2: u8 = 0x02;
+    lut mut b: u8 = 0x55;
+    lut m1: u8 = 0xfc;
+    lut m2: u8 = 0x02;
     
     println! ("b = 0x {: x}", b);
     println! ("m1 = 0x {: x}", m1);
