@@ -1,0 +1,37 @@
+// Operadores de Deslocamento
+	//Deslocando Bits à Esquerda
+fn main() {
+
+    let mut a:u8 = 0x01;
+    let x = 1; //Quantidade de bits para deslocar
+    
+    println!("x0 = (a<<x) = {:08b}",a); 
+    
+    a = a<<x; //Deslocamento
+    
+    println!("x1 = (a<<x) = {:08b}",a);
+    
+    a = a<<x;
+    
+    println!("x2 = (a<<x) = {:08b}",a);
+    
+    a = a<<x;
+    
+    println!("x3 = (a<<x) = {:08b}",a);
+    
+    a = a<<x;
+    
+    println!("x4 = (a<<x) = {:08b}",a);
+    
+    a = a<<x;
+    
+    println!("x5 = (a<<x) = {:08b}",a);
+    
+    a = a<<x;
+    
+    println!("x6 = (a<<x) = {:08b}",a);
+    
+    a = a<<x;
+    
+    println!("x7 = (a<<x) = {:08b}",a);
+}
